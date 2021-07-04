@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Header-->
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard for Datavisualization</title>
+  <title>Dashboard for Data Visualization</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -26,7 +26,7 @@
   <div>
     <div class="row">
       <div class="col col-6 homebtn">
-        <a href="landingpage.html">Lattitude</a>
+        <a href="landingpage.html">Home</a>
       </div>
       <div class="col col-6 menubuttons divtop">
 
@@ -55,7 +55,7 @@
                 <a class="nav-link" href="comparison.html">Comparison</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
+                <a class="nav-link" href="dataset.html">Data Table</a>
               </li>
             </ul>
           </div>
@@ -74,11 +74,11 @@
         <br>
         <h1>Data</h1>
         <hr>
-        <p>The following table includes all of the data used for plotting during this project. </p>
+        <p>Distribution of the selected cities by Latitude, Longitude, Temperature, Cloudiness, Country, Humidity, and Wind Speed. </p>
 
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: center; background-color: lightcoral; color: black;">
       <th>City_ID</th>
       <th>City</th>
       <th>Cloudiness</th>
@@ -6660,10 +6660,13 @@
 </table>
 </div>     
 <!-- Footer -->
-<footer class="page-footer font-small footer-dark">
-    <div class="footer-copyright text-center py-3">© Copyright Coding Bootcamp 2019
-    </div>      
-</footer>
+ <br>
+ <div>
+  <div class="row">
+    <div class="col col-12 divbtm"><p><small>Data Source: <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a> </small><br><small>Comments and Suggestions: <a href="mailto:davermannrodney@gmail.com">Rodney Davermann</a></small></p></div>
+  </div>
+</div>
 </body>
+
 </html>
 

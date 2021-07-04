@@ -1,0 +1,98 @@
+img {
+    max-width: 100%;
+  }
+  
+  #imgsel{
+    border: lightseagreen 2px solid;
+  }
+  
+  h1, h2, h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkgrey;
+  }
+  
+  h1{
+    font-size: 24px;
+    font-weight: bold;
+    text-align:left;
+  }
+  
+  h2{
+    font-size: 22px;
+    font-weight: bold;
+    text-align:left;
+  }
+  
+  h3{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  
+  .navbar{
+      position: absolute;
+      right: 30px;
+  }
+  
+
+  
+  body {
+    width: 100%;
+    min-height:100%;
+    background-color: lightgrey;
+  }
+  
+  .col {
+    width: 100%;
+    text-align: justify;
+    
+  } 
+  
+  .homebtn{
+    background-color: white;
+    z-index:2;
+  }
+  
+  .homebtn a{
+    width: 110px;
+    background: rgb(178, 32, 32);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 14px;
+    margin: 0px 0px 0px 40px;
+  }
+  
+  .divtop{
+    background-color: white;
+    z-index:2;
+  }
+  
+  .divbdy{
+    background-color: white;
+    z-index:1;
+  }
+  
+  .divtable{
+    text-align:center;
+    background-color: white;
+    z-index:1;
+  }
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:chocolate;
+    color: white;
+    text-align: center;
+  }
+
+
+
+  
