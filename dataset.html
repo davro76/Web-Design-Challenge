@@ -45,10 +45,10 @@
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="visualization-1.html">Max Temperature</a>
-                  <a class="dropdown-item" href="visualization-2.html">Humidity</a>
-                  <a class="dropdown-item" href="visualization-3.html">Cloudiness</a>
-                  <a class="dropdown-item" href="visualization-4.html">Wind Speed</a>
+                  <a class="dropdown-item" href="Temperature_Latitude.html">Max Temperature</a>
+                  <a class="dropdown-item" href="Humidity_Latitude.html">Humidity</a>
+                  <a class="dropdown-item" href="Cloudiness_Latitude.html">Cloudiness</a>
+                  <a class="dropdown-item" href="WindSpeed_Latitude.html">Wind Speed</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -66,6 +66,8 @@
     </div>
   </div>
   <!-- start of main body -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
   <div class="container">
     <br>
     <div class="row">
@@ -74,7 +76,7 @@
         <br>
         <h1>Data</h1>
         <hr>
-        <p>Distribution of the selected cities by Latitude, Longitude, Temperature, Cloudiness, Country, Humidity, and Wind Speed. </p>
+        <p>The following table includes all of the data used for plotting during this project.</p>
 
 <table border="1" class="dataframe">
   <thead>
@@ -6666,6 +6668,27 @@
     <div class="col col-12 divbtm"><p><small>Data Source: <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a> </small><br><small>Comments and Suggestions: <a href="mailto:davermannrodney@gmail.com">Rodney Davermann</a></small></p></div>
   </div>
 </div>
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
 </body>
 
 </html>

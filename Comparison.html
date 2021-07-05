@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--Header-->
 <head>
   <meta charset="UTF-8">
   <title>Dashboard for Data Visualization</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -19,8 +19,6 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
-
-<!--Body-->
 <body>
   <!-- Header -->
   <div>
@@ -69,42 +67,25 @@
   <div class="container">
     <br>
     <div class="row">
-      <!--Weather Data Analysis-->
-      <div class="col col-12 col-md-8 divbdy">
+      <div class="col col-12 divbdy">
         <br>
-        <h1><i><u>Weather Data Analysis </u></i></h1>
-        <hr>
-        <img src="images/Fig1.png" alt="Latitude vs. Temperature" width="280" align="right">
-        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-          accomplish this analysis, we:
-          <ol>
-            <li>Pulled data from the <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a> to assemble a dataset on over 500
-              cities.</li>
-            <li>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.</li>
-            <li>Factors we looked at included: temperature, cloudiness, wind speed, and humidity.</li>
-          </ol> 
-        </p>
-        <p> This site provides the souce data
-          and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and
-          correlations witnesseed.</p>
-        <hr>
-      </div>
-      <!-- Data Visualizations -->
-      <div class="col col-12 col-md-4 divbdy">
-        <br>
-        <h2><i><u>Data Visualizations</u></i></h2>
+        <h1>Displaying Reactive Plots to Compare Latitude Against Other Weather Elements</h1>
         <hr>
         <div class='row'>
-          <div class="col col-3 col-md-6">
+          <div class="col col-12 col-md-6">
+              <h3>vs. Max Temperature</h3>
             <a href="Temperature_Latitude.html"><img src="images/Fig1.png" alt="Latitude vs. Temperature"></a>
           </div>
-          <div class="col col-3 col-md-6">
+          <div class="col col-12 col-md-6">
+              <h3>vs. Humidity</h3>
             <a href="Humidity_Latitude.html"><img src="images/Fig2.png" alt="Latitude vs. Humidity"></a>
           </div>
-          <div class="col col-3 col-md-6">
+          <div class="col col-12 col-md-6">
+              <h3>vs. Cloudiness</h3>
             <a href="Cloudiness_Latitude.html"><img src="images/Fig3.png" alt="Latitude vs. Cloudiness"></a>
           </div>
-          <div class="col col-3 col-md-6">
+          <div class="col col-12 col-md-6">
+              <h3>vs. Wind Speed</h3>
             <a href="WindSpeed_Latitude.html"><img src="images/Fig4.png" alt="Latitude vs. Wind Speed"></a>
           </div>
         </div>
@@ -113,10 +94,11 @@
   </div>
   <!-- Footer -->
   <br>
-  <div class="footer">
-      <p><small>Author: Rodney Davermann</small><br><small>Comments and Suggestions: <a href="mailto:davermannrodney@gmail.com">Rodney Davermann</a></small></p>
+  <div>
+    <div class="row">
+      <div class="col col-12 divbtm"><p><small>Design: Rodney Davermann </small><br><small>Comments and Suggestions: <a href="mailto:davermannrodney@gmail.com">Rodney Davermann</a></small></p></div>
+    </div>
   </div>
-  
 </body>
 
 </html>
